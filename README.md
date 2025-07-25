@@ -96,7 +96,7 @@ fmt.Println(v, ok) // => 2 true
 var v int
 var match bool
 for _, c := range []byte("abcxxx") {
-	if t = t.TraceByte(c); t == nil {
+	if t = t.TraceOne(c); t == nil {
 		break
 	}
 	if vv, ok := t.Terminal(); ok {
